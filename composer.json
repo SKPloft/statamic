@@ -1,6 +1,6 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "statamic/statamic",
+    "name": "skploft/statamic",
     "type": "project",
     "description": "Statamic",
     "keywords": [
