@@ -1,3 +1,6 @@
+> [!NOTE]
+> This is a **fork** for my personal blog setup. For the original Statamic CMS, see the upstream repository.
+
 <p align="center">
 <picture>
     <source srcset="https://statamic.com/assets/branding/squircle/statamic-logo-lime-white.svg" media="(prefers-color-scheme: dark)">
