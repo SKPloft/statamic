@@ -18,3 +18,4 @@ jobs:
         with:
           username: "skploft"
           api_token: ${{ secrets.packagist_token }}
+          package_name: "skploft/statamic"
