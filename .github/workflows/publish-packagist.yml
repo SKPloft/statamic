@@ -1,7 +1,19 @@
-- name: Packagist Publish
-  uses: wscourge/gha-packagist-publish@1.0.2
-  with:
-  username: "skploft"
-  api_token: ${{ secrets.packagist_token }}
-  #package_name: vendor/name # No need to be explicit if you have checked out a composer.json
-  #domain: "packagist.org" # This is by default, so no need to specify this.
+name: Packagist Publish
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Packagist Publish
+        uses: wscourge/gha-packagist-publish@1.0.2
+        with:
+          username: "skploft"
+          api_token: ${{ secrets.packagist_token }}
